@@ -222,6 +222,135 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="services" className="services section">
+          <div className="container">
+            <div className="services-heading">
+              <p className="services-eyebrow">Services</p>
+
+              <h2 className="services-title">
+                Coaching built
+                <span> around you.</span>
+              </h2>
+
+              <p className="services-intro">
+                Choose the level of support that works for you — from personal
+                sessions to fully structured online coaching.
+              </p>
+            </div>
+
+            <div className="services-list">
+              <article className="service-item">
+                <span className="service-number">01</span>
+
+                <div className="service-main">
+                  <h3>Personal Training</h3>
+
+                  <p>
+                    One-to-one sessions focused on your goals, technique and
+                    progression, with every workout adapted to your current
+                    level.
+                  </p>
+
+                  <ul className="service-features">
+                    <li>1-to-1 coaching</li>
+                    <li>Individual training approach</li>
+                    <li>Technique guidance</li>
+                    <li>Progressive training</li>
+                  </ul>
+                </div>
+
+                <a href="#contact" className="service-link">
+                  Enquire
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+
+              <article className="service-item">
+                <span className="service-number">02</span>
+
+                <div className="service-main">
+                  <h3>Online Coaching</h3>
+
+                  <p>
+                    Train wherever you are with personalised guidance, structure
+                    and ongoing support to keep you moving towards your goals.
+                  </p>
+
+                  <ul className="service-features">
+                    <li>Personalised programme</li>
+                    <li>Online support</li>
+                    <li>Progress tracking</li>
+                    <li>Programme adjustments</li>
+                  </ul>
+                </div>
+
+                <a href="#contact" className="service-link">
+                  Enquire
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+
+              <article className="service-item">
+                <span className="service-number">03</span>
+
+                <div className="service-main">
+                  <h3>Training Programme</h3>
+
+                  <p>
+                    A structured monthly training plan created around your
+                    goals, experience, schedule and available equipment.
+                  </p>
+
+                  <ul className="service-features">
+                    <li>4-week programme</li>
+                    <li>Exercise selection</li>
+                    <li>Sets & repetitions</li>
+                    <li>Progression structure</li>
+                  </ul>
+                </div>
+
+                <a href="#contact" className="service-link">
+                  Enquire
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+
+              <article className="service-item">
+                <span className="service-number">04</span>
+
+                <div className="service-main">
+                  <h3>Nutrition Plan</h3>
+
+                  <p>
+                    A practical monthly nutrition plan designed around your
+                    goals, routine and food preferences.
+                  </p>
+
+                  <ul className="service-features">
+                    <li>4-week nutrition plan</li>
+                    <li>Goal-based structure</li>
+                    <li>Practical meal guidance</li>
+                    <li>Training + nutrition option</li>
+                  </ul>
+                </div>
+
+                <a href="#contact" className="service-link">
+                  Enquire
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+            </div>
+
+            <div className="services-bottom">
+              <p>Not sure which option is right for you?</p>
+
+              <a href="#contact">
+                Let&apos;s talk about your goals
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
