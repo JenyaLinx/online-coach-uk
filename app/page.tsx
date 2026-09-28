@@ -135,6 +135,93 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="goals section" aria-labelledby="goals-title">
+          <div className="container">
+            <div className="goals-heading">
+              <p className="eyebrow">Your goals</p>
+
+              <h2 id="goals-title" className="section-title">
+                What can we
+                <span> work on?</span>
+              </h2>
+
+              <p className="goals-intro">
+                No two people start from the same place. Your training should
+                reflect your goals, experience and lifestyle.
+              </p>
+            </div>
+
+            <div className="goals-grid">
+              <article className="goal-card">
+                <div className="goal-card-top">
+                  <span className="goal-number">01</span>
+                  <span className="goal-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </div>
+
+                <div>
+                  <h3>Lose weight</h3>
+                  <p>
+                    Build sustainable habits, improve your fitness and reduce
+                    body fat without extreme routines.
+                  </p>
+                </div>
+              </article>
+
+              <article className="goal-card">
+                <div className="goal-card-top">
+                  <span className="goal-number">02</span>
+                  <span className="goal-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </div>
+
+                <div>
+                  <h3>Build muscle</h3>
+                  <p>
+                    Follow structured, progressive training designed to help you
+                    gain muscle and develop your physique.
+                  </p>
+                </div>
+              </article>
+
+              <article className="goal-card">
+                <div className="goal-card-top">
+                  <span className="goal-number">03</span>
+                  <span className="goal-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </div>
+
+                <div>
+                  <h3>Get stronger</h3>
+                  <p>
+                    Improve your technique, increase strength and train with a
+                    clear progression instead of guessing.
+                  </p>
+                </div>
+              </article>
+
+              <article className="goal-card">
+                <div className="goal-card-top">
+                  <span className="goal-number">04</span>
+                  <span className="goal-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </div>
+
+                <div>
+                  <h3>Feel healthier</h3>
+                  <p>
+                    Move better, build confidence and create a training routine
+                    that supports your everyday life.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
