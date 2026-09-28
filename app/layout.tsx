@@ -9,11 +9,11 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Online Coach UK | Personal Trainer",
-    template: "%s | Online Coach UK",
+    default: "Bogdan Dovzhenko | Personal Trainer & Online Coach",
+    template: "%s | Bogdan Dovzhenko",
   },
   description:
-    "Personal training, online coaching, training programmes and nutrition support in the UK.",
+    "Personal training, online coaching, training programmes and nutrition support with Bogdan Dovzhenko in the UK.",
 };
 
 export default function RootLayout({
