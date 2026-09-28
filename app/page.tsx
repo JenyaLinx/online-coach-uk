@@ -69,6 +69,72 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="about" className="about section">
+          <div className="container">
+            <div className="about-heading">
+              <p className="eyebrow">About me</p>
+
+              <h2 className="section-title">
+                Experience built through
+                <span> years of discipline.</span>
+              </h2>
+            </div>
+
+            <div className="about-grid">
+              <div className="about-image-wrapper">
+                <Image
+                  src="/images/bogdan-dovzhenko-about.webp"
+                  alt="Bogdan Dovzhenko in the gym"
+                  fill
+                  sizes="(max-width: 767px) 100vw, 48vw"
+                  className="about-image"
+                />
+              </div>
+
+              <div className="about-content">
+                <p className="about-lead">
+                  Sport has been part of my life for more than 20 years.
+                </p>
+
+                <div className="about-copy">
+                  <p>
+                    I started training at a young age, exploring different
+                    sports and disciplines while learning what my body was
+                    capable of. That journey eventually led me to bodybuilding,
+                    which has been a major part of my life for the past 10
+                    years.
+                  </p>
+
+                  <p>
+                    For more than 8 years, I&apos;ve been helping people build
+                    stronger, healthier bodies through structured training,
+                    consistency and an individual approach.
+                  </p>
+
+                  <p>
+                    After moving from Ukraine to the UK three years ago, I
+                    continued doing what I know best — helping people train with
+                    purpose and create results they can maintain.
+                  </p>
+                </div>
+
+                <blockquote className="about-quote">
+                  <p>
+                    &ldquo;Training should fit your life — not force your life
+                    to fit around training.&rdquo;
+                  </p>
+
+                  <cite>Bogdan Dovzhenko</cite>
+                </blockquote>
+
+                <a href="#services" className="about-link">
+                  How I can help you
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
