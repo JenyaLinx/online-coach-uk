@@ -1680,3 +1680,173 @@ button {
     transform: translateY(-2px);
   }
 }
+
+/* =========================
+   Floating Social Menu
+========================= */
+
+.social-menu {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  pointer-events: none;
+}
+
+.social-menu-link {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 1.35rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(16px) scale(0.85);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+
+  transition:
+    opacity 180ms ease,
+    visibility 180ms ease,
+    transform 220ms ease;
+}
+
+.social-menu.is-open .social-menu-links {
+  pointer-events: auto;
+}
+
+.social-menu.is-open .social-menu-link {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0) scale(1);
+}
+
+.social-menu-link:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Social colours */
+
+.social-whatsapp {
+  background: #25d366;
+}
+
+.social-telegram {
+  background: #229ed9;
+}
+
+.social-instagram {
+  background:
+    linear-gradient(
+      135deg,
+      #833ab4,
+      #fd1d1d,
+      #fcb045
+    );
+}
+
+.social-tiktok {
+  background: #000000;
+}
+
+.social-facebook {
+  background: #1877f2;
+}
+
+
+.social-google {
+  background: #cbc2c2;
+  border: 1px solid var(--border);
+}
+
+.social-google svg {
+  font-size: 1.55rem;
+}
+
+/* Main button */
+
+.social-menu-toggle {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  background: var(--accent);
+  color: #ffffff;
+
+  border: 0;
+  border-radius: 50%;
+
+  font-size: 1.65rem;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.social-menu-toggle:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+}
+
+.social-menu-toggle:focus-visible,
+.social-menu-link:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  .social-menu {
+    right: 28px;
+    bottom: 28px;
+  }
+
+  .social-menu-link {
+    width: 56px;
+    height: 56px;
+
+    font-size: 1.45rem;
+  }
+
+  .social-menu-toggle {
+    width: 62px;
+    height: 62px;
+
+    font-size: 1.8rem;
+  }
+}

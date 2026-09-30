@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
+import SocialMenu from "@/components/SocialMenu";
 
 export default function Home() {
   return (
@@ -453,6 +454,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <SocialMenu />
     </>
   );
 }
