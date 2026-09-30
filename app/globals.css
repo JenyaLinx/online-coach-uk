@@ -234,7 +234,7 @@ button {
 .hero-eyebrow {
   margin-bottom: 18px;
 
-  color: var(--accent);
+  color: var(--foreground);
 
   font-size: 0.72rem;
   font-weight: 700;
@@ -407,6 +407,34 @@ button {
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.service-main {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.service-main h3 {
+  width: 100%;
+  max-width: none;
+
+  font-size: clamp(2rem, 10vw, 3.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.service-main > p {
+  width: 100%;
+  max-width: 560px;
+
+  margin-top: 20px;
+
+  color: rgba(247, 246, 242, 0.78);
+
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 /* =========================
@@ -1146,11 +1174,12 @@ button {
 }
 
 .service-item {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-  padding-block: 32px;
+  width: 100%;
+  padding: 32px 0;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
@@ -1169,30 +1198,14 @@ button {
   letter-spacing: 0.08em;
 }
 
-.service-main h3 {
-  max-width: 650px;
 
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.05em;
-}
-
-.service-main > p {
-  max-width: 570px;
-  margin-top: 18px;
-
-  color: rgba(247, 246, 242, 0.62);
-
-  font-size: 0.94rem;
-  line-height: 1.65;
-}
 
 .service-features {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 
+  width: 100%;
   margin: 24px 0 0;
   padding: 0;
 
@@ -1200,28 +1213,29 @@ button {
 }
 
 .service-features li {
+  width: auto;
+  max-width: 100%;
+
   padding: 8px 12px;
 
   color: rgba(247, 246, 242, 0.78);
 
   font-size: 0.68rem;
   font-weight: 550;
-  line-height: 1;
+  line-height: 1.2;
 
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
 }
 
 .service-link {
-  grid-column: 2;
-
   width: fit-content;
 
   display: inline-flex;
   align-items: center;
   gap: 10px;
 
-  margin-top: 8px;
+  margin-top: 4px;
   padding-bottom: 4px;
 
   color: #f7f6f2;
@@ -1285,6 +1299,7 @@ button {
   }
 
   .service-item {
+    display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 32px;
 
@@ -1293,6 +1308,7 @@ button {
 
   .service-link {
     align-self: start;
+    margin-top: 5px;
   }
 
   .services-bottom {
@@ -1323,7 +1339,10 @@ button {
 
   .service-main {
     display: grid;
-    grid-template-columns: minmax(300px, 0.85fr) minmax(280px, 0.75fr);
+    grid-template-columns:
+      minmax(280px, 0.85fr)
+      minmax(280px, 0.75fr);
+
     column-gap: 60px;
   }
 
@@ -1341,8 +1360,6 @@ button {
 
   .service-link {
     justify-self: end;
-
-    transition: color 180ms ease;
   }
 
   .service-link:hover,
