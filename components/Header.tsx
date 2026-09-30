@@ -48,8 +48,8 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
-          <a href="#contact" className="header-cta">
-            Start training
+          <a href="#pricing" className="header-cta">
+            View pricing
           </a>
 
           <button
