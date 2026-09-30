@@ -260,7 +260,7 @@ button {
   max-width: 540px;
   margin-top: 28px;
 
-  color: var(--muted);
+  color: var(--foreground);
 
   font-size: 1.05rem;
   line-height: 1.6;
@@ -401,7 +401,7 @@ button {
 }
 
 .hero-stats span {
-  color: var(--muted);
+  color: var(--foreground);
 
   font-size: 0.62rem;
   line-height: 1.25;
@@ -812,7 +812,7 @@ button {
 
   margin-top: 28px;
 
-  color: var(--muted);
+  color: var(--foreground);
 
   font-size: 1rem;
   line-height: 1.7;
@@ -938,7 +938,7 @@ button {
   max-width: 560px;
   margin-top: 24px;
 
-  color: var(--muted);
+  color: var(--foreground);
 
   font-size: 1rem;
   line-height: 1.7;
@@ -1012,7 +1012,7 @@ button {
 
   margin-top: 18px;
 
-  color: var(--muted);
+  color: var(--foreground);
 
   font-size: 0.92rem;
   line-height: 1.65;
@@ -1147,12 +1147,16 @@ button {
 
 .service-item {
   display: grid;
-  grid-template-columns: 32px 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 
   padding-block: 32px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.service-link {
+  width: fit-content;
 }
 
 .service-number {
@@ -1281,17 +1285,14 @@ button {
   }
 
   .service-item {
-    grid-template-columns: 45px minmax(0, 1fr) auto;
-    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 32px;
 
     padding-block: 42px;
   }
 
   .service-link {
-    grid-column: auto;
     align-self: start;
-
-    margin-top: 5px;
   }
 
   .services-bottom {
@@ -1314,12 +1315,10 @@ button {
   }
 
   .service-item {
-    grid-template-columns: 60px minmax(0, 1fr) 120px;
+    grid-template-columns: minmax(0, 1fr) 120px;
     gap: 32px;
 
     padding-block: 48px;
-
-    transition: padding 200ms ease;
   }
 
   .service-main {
@@ -1349,5 +1348,314 @@ button {
   .service-link:hover,
   .services-bottom a:hover {
     color: #9db9a9;
+  }
+}
+
+/* =========================
+   Pricing
+========================= */
+
+.pricing {
+  background: var(--surface);
+}
+
+.pricing-heading {
+  display: grid;
+  gap: 24px;
+
+  margin-bottom: 48px;
+}
+
+.pricing-intro {
+  max-width: 520px;
+
+  color: var(--foreground);
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.pricing-layout {
+  display: grid;
+  gap: 16px;
+}
+
+.pricing-main {
+  padding: 24px;
+
+  background: var(--background);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.pricing-main-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding-bottom: 28px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-label,
+.pricing-small-label {
+  color: var(--accent);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pricing-main-heading h3 {
+  margin-top: 8px;
+
+  font-size: clamp(2rem, 9vw, 3.5rem);
+  font-weight: 550;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.session-group {
+  padding-block: 30px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.session-group:last-child {
+  border-bottom: 0;
+  padding-bottom: 4px;
+}
+
+.session-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+
+.session-number {
+  padding-top: 6px;
+
+  color: var(--accent);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.session-row h4 {
+  font-size: clamp(1.5rem, 7vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.session-row > strong {
+  color: var(--accent);
+
+  font-size: clamp(1.8rem, 8vw, 2.8rem);
+  font-weight: 550;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.session-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin: 24px 0 0 28px;
+  padding: 18px;
+
+  background: var(--surface);
+
+  border-radius: var(--radius-sm);
+}
+
+.session-block > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.session-block span {
+  color: var(--foreground);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.session-block small {
+  color: var(--accent);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.session-block > strong {
+  color: var(--foreground);
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+/* Pricing CTA */
+
+.pricing-cta {
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px;
+
+  background: var(--accent);
+  color: #ffffff;
+
+  border-radius: var(--radius-md);
+}
+
+.pricing-cta-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pricing-cta h3 {
+  max-width: 430px;
+
+  margin-top: 80px;
+
+  font-size: clamp(2.2rem, 9vw, 3.8rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.pricing-cta p {
+  max-width: 400px;
+
+  margin-top: 22px;
+
+  color: #ffffff;
+
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.pricing-cta a {
+  width: 100%;
+  min-height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 40px;
+  padding-inline: 20px;
+
+  background: #ffffff;
+  color: var(--foreground);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  border-radius: 999px;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .pricing-heading {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: end;
+
+    margin-bottom: 64px;
+  }
+
+  .pricing-main {
+    padding: 32px;
+  }
+
+  .pricing-main-heading {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .session-group {
+    padding-block: 36px;
+  }
+
+  .session-block {
+    margin-left: 40px;
+  }
+
+  .pricing-cta {
+    padding: 36px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .pricing-heading {
+    margin-bottom: 76px;
+  }
+
+  .pricing-layout {
+    grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.55fr);
+    gap: 18px;
+  }
+
+  .pricing-main {
+    padding: 40px;
+  }
+
+  .session-group {
+    padding-block: 42px;
+  }
+
+  .session-row > div {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .session-block {
+    margin-left: 40px;
+    padding: 20px 24px;
+  }
+
+  .pricing-cta {
+    position: sticky;
+    top: 24px;
+
+    min-height: 100%;
+
+    padding: 40px;
+  }
+
+  .pricing-cta h3 {
+    margin-top: 120px;
+  }
+
+  .pricing-cta a {
+    margin-top: auto;
+
+    transition:
+      transform 180ms ease,
+      background 180ms ease;
+  }
+
+  .pricing-cta a:hover {
+    background: #f1efe9;
+    transform: translateY(-2px);
   }
 }

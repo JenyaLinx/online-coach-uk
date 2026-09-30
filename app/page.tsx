@@ -7,6 +7,7 @@ export default function Home() {
       <Header />
 
       <main>
+        {/* HERO */}
         <section className="hero">
           <div className="container hero-inner">
             <div className="hero-content">
@@ -69,6 +70,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* ABOUT */}
         <section id="about" className="about section">
           <div className="container">
             <div className="about-heading">
@@ -135,6 +138,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* GOALS */}
         <section className="goals section" aria-labelledby="goals-title">
           <div className="container">
             <div className="goals-heading">
@@ -154,7 +159,6 @@ export default function Home() {
             <div className="goals-grid">
               <article className="goal-card">
                 <div className="goal-card-top">
-                  <span className="goal-number">01</span>
                   <span className="goal-arrow" aria-hidden="true">
                     ↗
                   </span>
@@ -162,6 +166,7 @@ export default function Home() {
 
                 <div>
                   <h3>Lose weight</h3>
+
                   <p>
                     Build sustainable habits, improve your fitness and reduce
                     body fat without extreme routines.
@@ -171,7 +176,6 @@ export default function Home() {
 
               <article className="goal-card">
                 <div className="goal-card-top">
-                  <span className="goal-number">02</span>
                   <span className="goal-arrow" aria-hidden="true">
                     ↗
                   </span>
@@ -179,6 +183,7 @@ export default function Home() {
 
                 <div>
                   <h3>Build muscle</h3>
+
                   <p>
                     Follow structured, progressive training designed to help you
                     gain muscle and develop your physique.
@@ -188,7 +193,6 @@ export default function Home() {
 
               <article className="goal-card">
                 <div className="goal-card-top">
-                  <span className="goal-number">03</span>
                   <span className="goal-arrow" aria-hidden="true">
                     ↗
                   </span>
@@ -196,6 +200,7 @@ export default function Home() {
 
                 <div>
                   <h3>Get stronger</h3>
+
                   <p>
                     Improve your technique, increase strength and train with a
                     clear progression instead of guessing.
@@ -205,7 +210,6 @@ export default function Home() {
 
               <article className="goal-card">
                 <div className="goal-card-top">
-                  <span className="goal-number">04</span>
                   <span className="goal-arrow" aria-hidden="true">
                     ↗
                   </span>
@@ -213,6 +217,7 @@ export default function Home() {
 
                 <div>
                   <h3>Feel healthier</h3>
+
                   <p>
                     Move better, build confidence and create a training routine
                     that supports your everyday life.
@@ -222,6 +227,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* SERVICES */}
         <section id="services" className="services section">
           <div className="container">
             <div className="services-heading">
@@ -240,8 +247,6 @@ export default function Home() {
 
             <div className="services-list">
               <article className="service-item">
-                <span className="service-number">01</span>
-
                 <div className="service-main">
                   <h3>Personal Training</h3>
 
@@ -266,8 +271,6 @@ export default function Home() {
               </article>
 
               <article className="service-item">
-                <span className="service-number">02</span>
-
                 <div className="service-main">
                   <h3>Online Coaching</h3>
 
@@ -291,8 +294,6 @@ export default function Home() {
               </article>
 
               <article className="service-item">
-                <span className="service-number">03</span>
-
                 <div className="service-main">
                   <h3>Training Programme</h3>
 
@@ -304,7 +305,7 @@ export default function Home() {
                   <ul className="service-features">
                     <li>4-week programme</li>
                     <li>Exercise selection</li>
-                    <li>Sets & repetitions</li>
+                    <li>Sets &amp; repetitions</li>
                     <li>Progression structure</li>
                   </ul>
                 </div>
@@ -316,8 +317,6 @@ export default function Home() {
               </article>
 
               <article className="service-item">
-                <span className="service-number">04</span>
-
                 <div className="service-main">
                   <h3>Nutrition Plan</h3>
 
@@ -348,6 +347,108 @@ export default function Home() {
                 Let&apos;s talk about your goals
                 <span aria-hidden="true">↗</span>
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* PRICING */}
+        <section id="pricing" className="pricing section">
+          <div className="container">
+            <div className="pricing-heading">
+              <div>
+                <p className="eyebrow">Pricing</p>
+
+                <h2 className="section-title">
+                  Simple pricing.
+                  <span> Serious training.</span>
+                </h2>
+              </div>
+
+              <p className="pricing-intro">
+                Choose the session length that works for you, or save with a
+                block of 10 sessions.
+              </p>
+            </div>
+
+            <div className="pricing-layout">
+              <div className="pricing-main">
+                <div className="pricing-main-heading">
+                  <div>
+                    <span className="pricing-label">Online training</span>
+                    <h3>Training sessions</h3>
+                  </div>
+
+                  <span className="pricing-small-label">
+                    Single / Block of 10
+                  </span>
+                </div>
+
+                <div className="session-list">
+                  <div className="session-group">
+                    <div className="session-row">
+                      <h4>30 Minute Session</h4>
+                      <strong>£30</strong>
+                    </div>
+
+                    <div className="session-block">
+                      <div>
+                        <span>Block of 10</span>
+                        <small>Save £50</small>
+                      </div>
+
+                      <strong>£250</strong>
+                    </div>
+                  </div>
+
+                  <div className="session-group">
+                    <div className="session-row">
+                      <h4>45 Minute Session</h4>
+                      <strong>£35</strong>
+                    </div>
+
+                    <div className="session-block">
+                      <div>
+                        <span>Block of 10</span>
+                        <small>Save £55</small>
+                      </div>
+
+                      <strong>£295</strong>
+                    </div>
+                  </div>
+
+                  <div className="session-group">
+                    <div className="session-row">
+                      <h4>1 Hour Session</h4>
+                      <strong>£40</strong>
+                    </div>
+
+                    <div className="session-block">
+                      <div>
+                        <span>Block of 10</span>
+                        <small>Save £40</small>
+                      </div>
+
+                      <strong>£360</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <aside className="pricing-cta">
+                <span className="pricing-cta-label">Ready to start?</span>
+
+                <h3>Let&apos;s build a plan around your goals.</h3>
+
+                <p>
+                  Not sure which session is right for you? Get in touch and we
+                  can discuss your goals, experience and training preferences.
+                </p>
+
+                <a href="#contact">
+                  Start training
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </aside>
             </div>
           </div>
         </section>
