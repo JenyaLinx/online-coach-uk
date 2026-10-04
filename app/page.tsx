@@ -649,6 +649,143 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* FAQ */}
+        <section id="faq" className="faq section">
+          <div className="container">
+            <div className="faq-layout">
+              <div className="faq-heading">
+                <p className="eyebrow">FAQ</p>
+
+                <h2 className="section-title">
+                  Questions?
+                  <span> Start here.</span>
+                </h2>
+
+                <p className="faq-intro">
+                  Everything you need to know before starting personal training
+                  or online coaching.
+                </p>
+              </div>
+
+              <div className="faq-list">
+                <details className="faq-item">
+                  <summary>
+                    <span>Do I need to be fit before I start?</span>
+
+                    <span
+                      className="faq-arrow faq-arrow-attention"
+                      aria-hidden="true"
+                    >
+                      ↓
+                    </span>
+                  </summary>
+
+                  <div className="faq-answer">
+                    <p>
+                      Not at all. Your training will be adapted to your current
+                      fitness level, experience and goals. Whether you are
+                      completely new to training or already experienced, we
+                      start from where you are.
+                    </p>
+                  </div>
+                </details>
+
+                <details className="faq-item">
+                  <summary>
+                    <span>What happens during the first session?</span>
+
+                    <span className="faq-arrow" aria-hidden="true">
+                      ↓
+                    </span>
+                  </summary>
+
+                  <div className="faq-answer">
+                    <p>
+                      We&apos;ll discuss your goals, training experience and
+                      what you want to achieve. I&apos;ll assess your current
+                      level and use that information to build the right approach
+                      for your training.
+                    </p>
+                  </div>
+                </details>
+
+                <details className="faq-item">
+                  <summary>
+                    <span>Can I train with you online?</span>
+
+                    <span className="faq-arrow" aria-hidden="true">
+                      ↓
+                    </span>
+                  </summary>
+
+                  <div className="faq-answer">
+                    <p>
+                      Yes. Online coaching gives you a structured training plan
+                      that you can follow wherever you train, with ongoing
+                      guidance and support to help you stay consistent and make
+                      progress.
+                    </p>
+                  </div>
+                </details>
+
+                <details className="faq-item">
+                  <summary>
+                    <span>Can you help me lose weight or build muscle?</span>
+
+                    <span className="faq-arrow" aria-hidden="true">
+                      ↓
+                    </span>
+                  </summary>
+
+                  <div className="faq-answer">
+                    <p>
+                      Yes. Training can be built around fat loss, muscle gain,
+                      strength, improved fitness or general health. Your
+                      programme is based on your individual goal rather than a
+                      one-size-fits-all approach.
+                    </p>
+                  </div>
+                </details>
+
+                <details className="faq-item">
+                  <summary>
+                    <span>Do you provide nutrition guidance?</span>
+
+                    <span className="faq-arrow" aria-hidden="true">
+                      ↓
+                    </span>
+                  </summary>
+
+                  <div className="faq-answer">
+                    <p>
+                      Yes. Nutrition guidance can be included alongside your
+                      training to support your goals and help you build a
+                      practical routine that works with your lifestyle.
+                    </p>
+                  </div>
+                </details>
+
+                <details className="faq-item">
+                  <summary>
+                    <span>How do I get started?</span>
+
+                    <span className="faq-arrow" aria-hidden="true">
+                      ↓
+                    </span>
+                  </summary>
+
+                  <div className="faq-answer">
+                    <p>
+                      Get in touch and tell me a little about yourself, your
+                      current training and what you want to achieve. We can then
+                      decide which training option is the best fit for you.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <SocialMenu />
