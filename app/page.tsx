@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import SocialMenu from "@/components/SocialMenu";
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -550,7 +552,105 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* REVIEWS */}
+        <section id="reviews" className="reviews section">
+          <div className="container">
+            <div className="reviews-heading">
+              <p className="eyebrow">Client reviews</p>
+
+              <h2 className="section-title">
+                What clients
+                <span> say.</span>
+              </h2>
+            </div>
+
+            <div className="reviews-grid">
+              {/* Review 1 */}
+              <article className="review-card">
+                <h3 className="review-name">Anastasia Quinton-Smith</h3>
+
+                <div className="review-info">
+                  <div className="review-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="review-source">
+                    <span className="review-source-icon google">
+                      <FcGoogle />
+                    </span>
+
+                    <span>Google Review</span>
+                  </div>
+                </div>
+
+                <blockquote>
+                  &ldquo;Bogdan is incredibly knowledgeable and makes every
+                  session feel welcoming and supportive. He explains everything
+                  clearly and adapts the training to your individual level and
+                  goals.&rdquo;
+                </blockquote>
+
+                <time dateTime="2025-11-05">05.11.2025</time>
+              </article>
+
+              {/* Review 2 */}
+              <article className="review-card">
+                <h3 className="review-name">Maire Gibson</h3>
+
+                <div className="review-info">
+                  <div className="review-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="review-source">
+                    <span className="review-source-icon facebook">
+                      <FaFacebookF />
+                    </span>
+
+                    <span>Facebook Review</span>
+                  </div>
+                </div>
+
+                <blockquote>
+                  &ldquo;Bogdan is very experienced and really takes the time to
+                  work with you as an individual. The training feels structured,
+                  professional and focused on your personal progress.&rdquo;
+                </blockquote>
+
+                <time dateTime="2025-12-18">18.12.2025</time>
+              </article>
+
+              {/* Review 3 */}
+              <article className="review-card">
+                <h3 className="review-name">Laura</h3>
+
+                <div className="review-info">
+                  <div className="review-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="review-source">
+                    <span className="review-source-icon instagram">
+                      <FaInstagram />
+                    </span>
+
+                    <span>Instagram Review</span>
+                  </div>
+                </div>
+
+                <blockquote>
+                  &ldquo;Bogdan is friendly, welcoming and really takes the time
+                  to teach you the correct technique for every exercise. I would
+                  highly recommend training with him.&rdquo;
+                </blockquote>
+
+                <time dateTime="2026-02-09">09.02.2026</time>
+              </article>
+            </div>
+          </div>
+        </section>
       </main>
+
       <SocialMenu />
     </>
   );
