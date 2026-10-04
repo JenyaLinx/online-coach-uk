@@ -487,7 +487,9 @@ export default function Home() {
                 </div>
 
                 <div className="certificate-content">
-                  <span className="certificate-year">2020</span>
+                  <span className="certificate-location">
+                    Kyiv, Ukraine 2020
+                  </span>
 
                   <h3>Ukraine National Bench Press Championship</h3>
 
@@ -495,8 +497,6 @@ export default function Home() {
                     First place in the Open division, competing in the -105 kg
                     weight class with a recorded bench press of 235 kg.
                   </p>
-
-                  <span className="certificate-location">Kyiv, Ukraine</span>
                 </div>
               </article>
 
@@ -512,7 +512,9 @@ export default function Home() {
                 </div>
 
                 <div className="certificate-content">
-                  <span className="certificate-year">2022</span>
+                  <span className="certificate-location">
+                    Lviv, Ukraine 2022
+                  </span>
 
                   <h3>Ukraine Open Kettlebell Lifting Championship</h3>
 
@@ -520,8 +522,6 @@ export default function Home() {
                     First place in the Long Cycle Snatch discipline using a 24
                     kg kettlebell, with a recorded result of 245 repetitions.
                   </p>
-
-                  <span className="certificate-location">Lviv, Ukraine</span>
                 </div>
               </article>
 
@@ -537,7 +537,9 @@ export default function Home() {
                 </div>
 
                 <div className="certificate-content">
-                  <span className="certificate-year">2024</span>
+                  <span className="certificate-location">
+                    Kyiv, Ukraine 2024
+                  </span>
 
                   <h3>Ukraine Bicep Curl Championship</h3>
 
@@ -545,8 +547,6 @@ export default function Home() {
                     First place in the Open division, competing in the -93 kg
                     weight class with a winning lift of 85 kg.
                   </p>
-
-                  <span className="certificate-location">Kyiv, Ukraine</span>
                 </div>
               </article>
             </div>

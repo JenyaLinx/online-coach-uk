@@ -982,7 +982,7 @@ button {
 }
 
 .goal-card {
-  min-height: 310px;
+  min-height: 270px;
 
   display: flex;
   flex-direction: column;
@@ -1907,17 +1907,7 @@ button {
   padding-top: 22px;
 }
 
-.certificate-year {
-  display: block;
 
-  margin-bottom: 12px;
-
-  color: var(--accent);
-
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
 
 .certificate-content h3 {
   max-width: 420px;
@@ -1945,7 +1935,7 @@ button {
   display: block;
 
   margin-top: 18px;
-
+margin-bottom: 18px;
   color: var(--accent);
 
   font-size: 0.68rem;
