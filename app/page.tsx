@@ -453,6 +453,103 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* ACHIEVEMENTS */}
+        <section id="achievements" className="achievements section">
+          <div className="container">
+            <div className="achievements-heading">
+              <div>
+                <p className="eyebrow">Achievements</p>
+
+                <h2 className="section-title">
+                  Built on experience.
+                  <span> Proven in competition.</span>
+                </h2>
+              </div>
+
+              <p className="achievements-intro">
+                Years of training, discipline and competitive experience have
+                shaped the way I approach coaching today.
+              </p>
+            </div>
+
+            <div className="certificates-grid">
+              <article className="certificate-card">
+                <div className="certificate-image-wrapper">
+                  <Image
+                    src="/images/certificate1.webp"
+                    alt="Bogdan Dovzhenko bench press championship certificate"
+                    fill
+                    sizes="(max-width: 767px) 100vw, 33vw"
+                    className="certificate-image"
+                  />
+                </div>
+
+                <div className="certificate-content">
+                  <span className="certificate-year">2020</span>
+
+                  <h3>Ukraine National Bench Press Championship</h3>
+
+                  <p>
+                    First place in the Open division, competing in the -105 kg
+                    weight class with a recorded bench press of 235 kg.
+                  </p>
+
+                  <span className="certificate-location">Kyiv, Ukraine</span>
+                </div>
+              </article>
+
+              <article className="certificate-card">
+                <div className="certificate-image-wrapper">
+                  <Image
+                    src="/images/certificate2.webp"
+                    alt="Bogdan Dovzhenko kettlebell lifting championship certificate"
+                    fill
+                    sizes="(max-width: 767px) 100vw, 33vw"
+                    className="certificate-image"
+                  />
+                </div>
+
+                <div className="certificate-content">
+                  <span className="certificate-year">2022</span>
+
+                  <h3>Ukraine Open Kettlebell Lifting Championship</h3>
+
+                  <p>
+                    First place in the Long Cycle Snatch discipline using a 24
+                    kg kettlebell, with a recorded result of 245 repetitions.
+                  </p>
+
+                  <span className="certificate-location">Lviv, Ukraine</span>
+                </div>
+              </article>
+
+              <article className="certificate-card">
+                <div className="certificate-image-wrapper">
+                  <Image
+                    src="/images/certificate3.webp"
+                    alt="Bogdan Dovzhenko bicep curl championship certificate"
+                    fill
+                    sizes="(max-width: 767px) 100vw, 33vw"
+                    className="certificate-image"
+                  />
+                </div>
+
+                <div className="certificate-content">
+                  <span className="certificate-year">2024</span>
+
+                  <h3>Ukraine Bicep Curl Championship</h3>
+
+                  <p>
+                    First place in the Open division, competing in the -93 kg
+                    weight class with a winning lift of 85 kg.
+                  </p>
+
+                  <span className="certificate-location">Kyiv, Ukraine</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
       </main>
       <SocialMenu />
     </>
