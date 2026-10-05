@@ -1188,9 +1188,6 @@ button {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.service-link {
-  width: fit-content;
-}
 
 .service-number {
   padding-top: 5px;
@@ -1232,25 +1229,7 @@ button {
   border-radius: 999px;
 }
 
-.service-link {
-  width: fit-content;
 
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  margin-top: 4px;
-  padding-bottom: 4px;
-
-  color: #f7f6f2;
-
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-}
 
 .services-bottom {
   display: flex;
@@ -1310,10 +1289,7 @@ button {
     padding-block: 42px;
   }
 
-  .service-link {
-    align-self: start;
-    margin-top: 5px;
-  }
+  
 
   .services-bottom {
     flex-direction: row;
@@ -1362,14 +1338,6 @@ button {
     margin-top: 20px;
   }
 
-  .service-link {
-    justify-self: end;
-  }
-
-  .service-link:hover,
-  .services-bottom a:hover {
-    color: #9db9a9;
-  }
 }
 
 /* =========================
@@ -2660,6 +2628,9 @@ margin-bottom: 18px;
     font-size: clamp(5.5rem, 8vw, 8.5rem);
   }
 
+.contact-cta-action p {
+  font-size: 1.4rem;
+}
   .contact-cta-action {
     padding-bottom: 10px;
   }

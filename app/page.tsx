@@ -267,11 +267,6 @@ export default function Home() {
                     <li>Progressive training</li>
                   </ul>
                 </div>
-
-                <a href="#contact" className="service-link">
-                  Enquire
-                  <span aria-hidden="true">↗</span>
-                </a>
               </article>
 
               <article className="service-item">
@@ -290,11 +285,6 @@ export default function Home() {
                     <li>Programme adjustments</li>
                   </ul>
                 </div>
-
-                <a href="#contact" className="service-link">
-                  Enquire
-                  <span aria-hidden="true">↗</span>
-                </a>
               </article>
 
               <article className="service-item">
@@ -313,11 +303,6 @@ export default function Home() {
                     <li>Progression structure</li>
                   </ul>
                 </div>
-
-                <a href="#contact" className="service-link">
-                  Enquire
-                  <span aria-hidden="true">↗</span>
-                </a>
               </article>
 
               <article className="service-item">
@@ -336,11 +321,6 @@ export default function Home() {
                     <li>Training + nutrition option</li>
                   </ul>
                 </div>
-
-                <a href="#contact" className="service-link">
-                  Enquire
-                  <span aria-hidden="true">↗</span>
-                </a>
               </article>
             </div>
 
