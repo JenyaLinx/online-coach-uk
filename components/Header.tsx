@@ -29,7 +29,7 @@ export default function Header() {
     event.preventDefault();
 
     const startPosition = window.scrollY;
-    const headerHeight = 100;
+    const headerHeight = 75;
 
     let targetPosition = 0;
 
