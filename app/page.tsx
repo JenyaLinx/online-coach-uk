@@ -786,6 +786,46 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* CONTACT CTA */}
+        <section id="contact" className="contact-cta">
+          <div className="container">
+            <div className="contact-cta-inner">
+              <div className="contact-cta-top">
+                <p className="eyebrow contact-eyebrow">Ready to start?</p>
+
+                <p className="contact-availability">
+                  <span className="availability-dot" />
+                  Available for new clients
+                </p>
+              </div>
+
+              <div className="contact-cta-content">
+                <h2>
+                  Ready to make
+                  <span> a change?</span>
+                </h2>
+
+                <div className="contact-cta-action">
+                  <p>
+                    Let&apos;s build a training plan around your goals,
+                    lifestyle and experience.
+                  </p>
+
+                  <a href="#contact-links" className="contact-cta-button">
+                    Start training
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="contact-cta-bottom" id="contact-links">
+                <span>Personal Training</span>
+                <span>Online Coaching</span>
+                <span>Nutrition</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <SocialMenu />
