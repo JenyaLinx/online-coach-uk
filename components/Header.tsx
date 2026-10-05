@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -22,8 +22,65 @@ export default function Header() {
     };
   }, [isMenuOpen]);
 
-  const closeMenu = () => {
+  const smoothScrollTo = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    event.preventDefault();
+
+    const startPosition = window.scrollY;
+    const headerHeight = 100;
+
+    let targetPosition = 0;
+
+    if (href !== "#") {
+      const target = document.querySelector(href);
+
+      if (!target) return;
+
+      targetPosition =
+        target.getBoundingClientRect().top + window.scrollY - headerHeight;
+    }
+
+    const distance = targetPosition - startPosition;
+    const duration = 850;
+    let startTime: number | null = null;
+
+    const easeInOutCubic = (progress: number) => {
+      return progress < 0.5
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+    };
+
+    const animation = (currentTime: number) => {
+      if (startTime === null) {
+        startTime = currentTime;
+      }
+
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = easeInOutCubic(progress);
+
+      window.scrollTo(0, startPosition + distance * easedProgress);
+
+      if (progress < 1) {
+        requestAnimationFrame(animation);
+      }
+    };
+
+    requestAnimationFrame(animation);
+  };
+
+  const handleNavigation = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     setIsMenuOpen(false);
+
+    // Give the mobile menu a moment to close before scrolling.
+    window.setTimeout(() => {
+      smoothScrollTo(event, href);
+    }, 50);
   };
 
   return (
@@ -33,7 +90,7 @@ export default function Header() {
           href="#"
           className="brand"
           aria-label="Bogdan Dovzhenko home"
-          onClick={closeMenu}
+          onClick={(event) => handleNavigation(event, "#")}
         >
           <span className="brand-name">BOGDAN</span>
           <span className="brand-surname">DOVZHENKO</span>
@@ -41,14 +98,22 @@ export default function Header() {
 
         <nav className="desktop-nav" aria-label="Main navigation">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href}>
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={(event) => handleNavigation(event, link.href)}
+            >
               {link.label}
             </a>
           ))}
         </nav>
 
         <div className="header-actions">
-          <a href="#pricing" className="header-cta">
+          <a
+            href="#pricing"
+            className="header-cta"
+            onClick={(event) => handleNavigation(event, "#pricing")}
+          >
             View pricing
           </a>
 
@@ -74,7 +139,11 @@ export default function Header() {
         <div className="container mobile-menu-inner">
           <nav className="mobile-nav" aria-label="Mobile navigation">
             {navLinks.map((link, index) => (
-              <a key={link.href} href={link.href} onClick={closeMenu}>
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(event) => handleNavigation(event, link.href)}
+              >
                 <span className="mobile-nav-number">
                   {String(index + 1).padStart(2, "0")}
                 </span>
@@ -87,7 +156,10 @@ export default function Header() {
           <div className="mobile-menu-bottom">
             <p>Personal Trainer & Online Coach</p>
 
-            <a href="#contact" onClick={closeMenu}>
+            <a
+              href="#contact"
+              onClick={(event) => handleNavigation(event, "#contact")}
+            >
               Start your journey
               <span aria-hidden="true">↗</span>
             </a>
