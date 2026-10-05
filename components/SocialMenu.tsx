@@ -54,6 +54,7 @@ const socialLinks = [
 export default function SocialMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Close menu with Escape
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -65,6 +66,19 @@ export default function SocialMenu() {
 
     return () => {
       window.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
+
+  // Open menu from START TRAINING button
+  useEffect(() => {
+    const openSocialMenu = () => {
+      setIsOpen(true);
+    };
+
+    window.addEventListener("open-social-menu", openSocialMenu);
+
+    return () => {
+      window.removeEventListener("open-social-menu", openSocialMenu);
     };
   }, []);
 
