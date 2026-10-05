@@ -609,7 +609,7 @@ button {
 
 .menu-toggle {
   position: relative;
-  z-index: 70;
+  z-index: 1001;
 
   width: 42px;
   height: 42px;
@@ -653,9 +653,12 @@ button {
 
 .mobile-menu {
   position: fixed;
-  z-index: 40;
+  z-index: 999;
 
-  inset: 77px 0 0;
+  top: 77px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   background: var(--background);
 
@@ -665,6 +668,8 @@ button {
   transform: translateY(-12px);
 
   pointer-events: none;
+
+  overflow-y: auto;
 
   transition:
     opacity 250ms ease,
@@ -762,7 +767,7 @@ button {
 
 @media (min-width: 768px) {
   .mobile-menu {
-    inset: 85px 0 0;
+    top: 85px;
   }
 
   .mobile-menu-inner {
