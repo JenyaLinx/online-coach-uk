@@ -2564,13 +2564,17 @@ margin-bottom: 18px;
   background: var(--accent);
   color: #ffffff;
 
+  border: 0;
   border-radius: 999px;
 
+  font-family: inherit;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-decoration: none;
   text-transform: uppercase;
+
+  cursor: pointer;
 
   transition:
     transform 180ms ease,

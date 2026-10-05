@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import SocialMenu from "@/components/SocialMenu";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import StartTrainingButton from "@/components/StartTrainingButton";
 
 export default function Home() {
   return (
@@ -811,10 +812,7 @@ export default function Home() {
                     lifestyle and experience.
                   </p>
 
-                  <a href="#contact-links" className="contact-cta-button">
-                    Start training
-                    <span aria-hidden="true">→</span>
-                  </a>
+                  <StartTrainingButton />
                 </div>
               </div>
 
