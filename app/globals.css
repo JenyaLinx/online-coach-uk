@@ -609,7 +609,7 @@ button {
 
 .menu-toggle {
   position: relative;
-  z-index: 1001;
+  z-index: 101;
 
   width: 42px;
   height: 42px;
@@ -652,23 +652,24 @@ button {
 }
 
 .mobile-menu {
-  position: fixed;
-  z-index: 999;
+  position: absolute;
 
-  top: 77px;
+  top: 100%;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+
+  height: calc(100dvh - 76px);
+
+  z-index: 100;
 
   background: var(--background);
 
   visibility: hidden;
   opacity: 0;
 
-  transform: translateY(-12px);
+  transform: translateY(-10px);
 
   pointer-events: none;
-
   overflow-y: auto;
 
   transition:
@@ -686,8 +687,9 @@ button {
   pointer-events: auto;
 }
 
+
 .mobile-menu-inner {
-  min-height: calc(100dvh - 77px);
+  min-height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -766,12 +768,13 @@ button {
 }
 
 @media (min-width: 768px) {
-  .mobile-menu {
-    top: 85px;
+  
+.mobile-menu {
+    height: calc(100dvh - 84px);
   }
 
-  .mobile-menu-inner {
-    min-height: calc(100dvh - 85px);
+  .mobile-nav a {
+    padding-block: 18px;
   }
 
   .mobile-nav a {
