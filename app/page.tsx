@@ -33,8 +33,8 @@ export default function Home() {
                   <span aria-hidden="true">↗</span>
                 </a>
 
-                <a href="#about" className="text-link">
-                  Discover my approach
+                <a href="#achievements" className="text-link">
+                  Discover my certificate
                   <span aria-hidden="true">↓</span>
                 </a>
               </div>
