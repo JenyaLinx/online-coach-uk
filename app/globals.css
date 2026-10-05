@@ -152,10 +152,17 @@ button {
 ========================= */
 
 .site-header {
-  position: relative;
-  z-index: 50;
-  background: var(--background);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(247, 246, 242, 0.96);
   border-bottom: 1px solid var(--border);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .header-inner {
@@ -1068,6 +1075,7 @@ button {
   .goals-intro {
     align-self: end;
     margin-top: 0;
+    font-size: 1.2rem;
   }
 
   .goals-grid {
@@ -1169,7 +1177,7 @@ button {
 
   color: rgba(247, 246, 242, 0.62);
 
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
 }
 
@@ -1945,6 +1953,7 @@ margin-bottom: 18px;
   .achievements-intro {
     max-width: 420px;
     padding-bottom: 8px;
+    font-size: 1.2rem;
   }
 
   .certificates-grid {
