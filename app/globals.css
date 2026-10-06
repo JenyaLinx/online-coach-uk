@@ -1003,7 +1003,7 @@ button {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
   padding: 24px;
 
@@ -1028,23 +1028,8 @@ button {
 }
 
 .goal-arrow {
-  width: 38px;
-  height: 38px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid var(--border);
-  border-radius: 50%;
-
-  font-size: 1rem;
-
-  transition:
-    background 200ms ease,
-    color 200ms ease,
-    border-color 200ms ease,
-    transform 200ms ease;
+  display: none;
+  
 }
 
 .goal-card h3 {
@@ -1109,6 +1094,26 @@ button {
     margin-bottom: 72px;
   }
 
+  .goal-arrow {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  font-size: 1rem;
+
+  transition:
+    background 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
   .goals-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1116,6 +1121,7 @@ button {
   .goal-card {
     min-height: 390px;
     padding: 30px;
+    justify-content: space-between;
 
     transition:
       background 220ms ease,
