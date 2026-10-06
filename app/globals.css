@@ -2658,3 +2658,123 @@ margin-bottom: 18px;
     gap: 40px;
   }
 }
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  background: #ffffff;
+  color: var(--foreground);
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+  padding-top: 56px;
+  padding-bottom: 28px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 56px;
+}
+
+.footer-links-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-label {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-links-group a,
+.footer-links-group > span:not(.footer-label) {
+  color: var(--foreground);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-links-group a {
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.footer-developer a {
+  color: var(--foreground);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-links-group a:hover,
+  .footer-developer a:hover {
+    color: var(--accent);
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+  .footer-inner {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  .footer-links {
+    max-width: 520px;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    padding-bottom: 64px;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+  .footer-inner {
+    padding-top: 72px;
+    padding-bottom: 36px;
+  }
+
+  .footer-links {
+    padding-bottom: 72px;
+  }
+}

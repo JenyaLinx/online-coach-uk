@@ -804,6 +804,40 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <footer className="site-footer">
+          <div className="container footer-inner">
+            <div className="footer-links">
+              <div className="footer-links-group">
+                <span className="footer-label">Explore</span>
+
+                <a href="#pricing">Pricing</a>
+                <a href="#achievements">Certificates</a>
+              </div>
+
+              <div className="footer-links-group">
+                <span className="footer-label">Information</span>
+
+                <span>Privacy Policy</span>
+                <span>Cookie Policy</span>
+              </div>
+            </div>
+
+            <div className="footer-bottom">
+              <p>© 2026 Bogdan Dovzhenko. All rights reserved.</p>
+
+              <p className="footer-developer">
+                Developed by{" "}
+                <a
+                  href="https://oliinyk-portfolio-web.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Yevhenii O.
+                </a>
+              </p>
+            </div>
+          </div>
+        </footer>
       </main>
 
       <SocialMenu />
