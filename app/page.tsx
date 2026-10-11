@@ -30,7 +30,6 @@ export default function Home() {
               <div className="hero-actions">
                 <a href="#contact" className="button button-primary">
                   Start training
-                  <span aria-hidden="true">↗</span>
                 </a>
 
                 <a href="#achievements" className="text-link">
