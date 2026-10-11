@@ -806,20 +806,20 @@ export default function Home() {
         </section>
         <footer className="site-footer">
           <div className="container footer-inner">
-            <div className="footer-links">
-              <div className="footer-links-group">
-                <span className="footer-label">Explore</span>
+            <div className="footer-navigation">
+              <a href="#pricing" className="footer-main-link">
+                Pricing
+              </a>
 
-                <a href="#pricing">Pricing</a>
-                <a href="#achievements">Certificates</a>
-              </div>
+              <a href="#achievements" className="footer-main-link">
+                Certificates
+              </a>
+            </div>
 
-              <div className="footer-links-group">
-                <span className="footer-label">Information</span>
-
-                <span>Privacy Policy</span>
-                <span>Cookie Policy</span>
-              </div>
+            <div className="footer-legal">
+              <span>Privacy Policy</span>
+              <span className="footer-dot">•</span>
+              <span>Cookie Policy</span>
             </div>
 
             <div className="footer-bottom">
