@@ -138,16 +138,12 @@ export default function Header() {
       >
         <div className="container mobile-menu-inner">
           <nav className="mobile-nav" aria-label="Mobile navigation">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                onClick={(event) => handleNavigation(event, link.href)}
+                onClick={() => setIsMenuOpen(false)}
               >
-                <span className="mobile-nav-number">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-
                 <span>{link.label}</span>
               </a>
             ))}
