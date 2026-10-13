@@ -119,14 +119,14 @@ export default function Home() {
 
                   <p>
                     After moving from Ukraine to the UK three years ago, I
-                    continued doing what I know best — helping people train with
+                    continued doing what I know best - helping people train with
                     purpose and create results they can maintain.
                   </p>
                 </div>
 
                 <blockquote className="about-quote">
                   <p>
-                    &ldquo;Training should fit your life — not force your life
+                    &ldquo;Training should fit your life - not force your life
                     to fit around training.&rdquo;
                   </p>
 
@@ -243,7 +243,7 @@ export default function Home() {
               </h2>
 
               <p className="services-intro">
-                Choose the level of support that works for you — from personal
+                Choose the level of support that works for you - from personal
                 sessions to fully structured online coaching.
               </p>
             </div>

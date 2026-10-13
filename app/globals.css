@@ -730,6 +730,7 @@ button {
 
 .mobile-menu-bottom p {
   max-width: 130px;
+  margin-bottom: 60px;
 
   color: var(--muted);
 
@@ -740,6 +741,7 @@ button {
 }
 
 .mobile-menu-bottom a {
+  margin-bottom: 100px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
