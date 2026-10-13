@@ -1184,7 +1184,7 @@ button {
 }
 
 .services-title span {
-  color: #9db9a9;
+  color: #1f493d;
 }
 
 .services-intro {
@@ -1565,9 +1565,9 @@ button {
   width: 100%;
   min-height: 54px;
 
-  display: flex;
+ display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   margin-top: 40px;
   padding-inline: 20px;

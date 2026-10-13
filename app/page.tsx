@@ -427,10 +427,7 @@ export default function Home() {
                   can discuss your goals, experience and training preferences.
                 </p>
 
-                <a href="#contact">
-                  Start training
-                  <span aria-hidden="true">↗</span>
-                </a>
+                <a href="#contact">Start training</a>
               </aside>
             </div>
           </div>
