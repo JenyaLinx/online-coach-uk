@@ -623,6 +623,34 @@ export default function Home() {
 
                 <time dateTime="2026-02-09">09.02.2026</time>
               </article>
+              {/* Review 4 */}
+              <article className="review-card">
+                <h3 className="review-name">Ben G.</h3>
+
+                <div className="review-info">
+                  <div className="review-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="review-source">
+                    <span className="review-source-icon instagram">
+                      <FaInstagram />
+                    </span>
+
+                    <span>Instagram Review</span>
+                  </div>
+                </div>
+
+                <blockquote>
+                  &ldquo;Training with Bogdan has made a huge difference to my
+                  strength and confidence in the gym. The sessions are always
+                  well structured, challenging and adapted to my progress.
+                  I&apos;ve learned a lot about proper technique and feel
+                  stronger than ever.&rdquo;
+                </blockquote>
+
+                <time dateTime="2026-09-03">03.09.2026</time>
+              </article>
             </div>
           </div>
         </section>
