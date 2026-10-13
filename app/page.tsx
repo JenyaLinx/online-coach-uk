@@ -651,6 +651,35 @@ export default function Home() {
 
                 <time dateTime="2026-09-03">03.09.2026</time>
               </article>
+              {/* Review 5 */}
+              <article className="review-card">
+                <h3 className="review-name">Valentyna O.</h3>
+
+                <div className="review-info">
+                  <div className="review-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="review-source">
+                    <span className="review-source-icon google">
+                      <FcGoogle />
+                    </span>
+
+                    <span>Google Review</span>
+                  </div>
+                </div>
+
+                <blockquote>
+                  &ldquo;Bogdan is a great trainer who knows how to keep you
+                  motivated while making every session challenging and
+                  enjoyable. I&apos;ve become stronger, more confident and can
+                  really see the progress in my training. He is always
+                  supportive, professional and focused on helping you achieve
+                  your goals.&rdquo;
+                </blockquote>
+
+                <time dateTime="2026-10-03">03.10.2026</time>
+              </article>
             </div>
           </div>
         </section>
