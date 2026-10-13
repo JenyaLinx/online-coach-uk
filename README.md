@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💪 Bogdan Dovzhenko — Personal Trainer & Online Coach
 
-## Getting Started
+A modern, fully responsive personal trainer portfolio website built with **Next.js**, **React**, **TypeScript**, and **CSS**.
 
-First, run the development server:
+The website presents Bogdan's coaching experience, training services, pricing, achievements, and client reviews through a clean, easy-to-navigate interface. Developed with a **mobile-first approach**, the design adapts to **mobile, tablet, and desktop** screens.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 [https://online-coach-uk.vercel.app/](https://online-coach-uk.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### About
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Bogdan Dovzhenko — About](public/images/about.png)
 
-## Learn More
+An introduction to Bogdan's background, experience in sport and coaching, and his approach to helping clients reach their fitness goals.
 
-To learn more about Next.js, take a look at the following resources:
+### Achievements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Bogdan Dovzhenko — Achievements](public/images/achief.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A dedicated section highlighting sporting achievements and certificates.
 
-## Deploy on Vercel
+### Pricing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Bogdan Dovzhenko — Pricing](public/images/prices.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A clear overview of personal training sessions and available training packages, helping visitors explore their options.
+
+### Reviews
+
+![Bogdan Dovzhenko — Reviews](public/images/reviews.png)
+
+A responsive review section designed to present client feedback in an easy-to-read layout.
+
+## ✨ Features
+
+- 📱 Mobile-first responsive design for mobile, tablet, and desktop
+- 🧭 Sticky navigation and smooth section scrolling
+- 🍔 Responsive mobile navigation menu
+- 💪 Personal trainer introduction and coaching philosophy
+- 🎯 Training goals and services overview
+- 💷 Clear personal training prices and packages
+- 🏆 Achievements and certificates section
+- ⭐ Client review cards with platform labels
+- ❓ Expandable FAQ section
+- 💬 Interactive social/contact menu
+- 🔗 Social media and contact links
+- 🖼️ Optimised WebP images
+- 🎨 Custom BD favicon
+- 🚀 Deployment on Vercel
+
+## 🛠 Tech Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- CSS3
+- Responsive Web Design
+- CSS Grid
+- Flexbox
+- React Icons
+- WebP image optimisation
+- Vercel
+
+## 💡 What I Built
+
+During this project I worked on:
+
+- Planning and developing a personal trainer portfolio website from scratch
+- Designing a clean, modern interface focused on usability
+- Building the website with a **mobile-first approach**
+- Adapting layouts for **tablet and desktop** screen sizes
+- Creating responsive navigation with a mobile menu
+- Developing sections for About, Goals, Services, Pricing, Achievements, Reviews, and FAQ
+- Presenting training packages and pricing clearly
+- Creating a responsive layout for certificates and reviews
+- Building an expandable FAQ using native HTML elements
+- Implementing an interactive social/contact menu
+- Adding smooth navigation between page sections
+- Optimising images using WebP
+- Creating a custom **BD** favicon
+- Deploying the website with Vercel
+
+## 📁 Repository
+
+👉 [https://github.com/JenyaLinx/online-coach-uk](https://github.com/JenyaLinx/online-coach-uk)
+
+---
+
+## 👨‍💻 Author
+
+**Yevhenii Oliinyk**
+
+GitHub: [https://github.com/JenyaLinx](https://github.com/JenyaLinx)
+
+LinkedIn: [https://www.linkedin.com/in/yevhenii-oliinykk](https://www.linkedin.com/in/yevhenii-oliinykk)
