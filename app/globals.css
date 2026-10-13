@@ -697,7 +697,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
 
-  padding-top: 22px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -730,7 +730,7 @@ button {
 
 .mobile-menu-bottom p {
   max-width: 130px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
   color: var(--muted);
 
@@ -741,7 +741,7 @@ button {
 }
 
 .mobile-menu-bottom a {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
