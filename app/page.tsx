@@ -471,7 +471,7 @@ export default function Home() {
                   <h3>Ukraine National Bench Press Championship</h3>
 
                   <p>
-                    First place in the Open division, competing in the -105 kg
+                    First place in the Open division, competing in the - 105 kg
                     weight class with a recorded bench press of 235 kg.
                   </p>
                 </div>
@@ -521,7 +521,7 @@ export default function Home() {
                   <h3>Ukraine Bicep Curl Championship</h3>
 
                   <p>
-                    First place in the Open division, competing in the -93 kg
+                    First place in the Open division, competing in the - 93 kg
                     weight class with a winning lift of 85 kg.
                   </p>
                 </div>
@@ -873,6 +873,10 @@ export default function Home() {
               <span>Privacy Policy</span>
               <span className="footer-dot">•</span>
               <span>Cookie Policy</span>
+              <span className="footer-dot">•</span>
+              <span>Google Map</span>
+              <span className="footer-dot">•</span>
+              <span>Online</span>
             </div>
 
             <div className="footer-bottom">
