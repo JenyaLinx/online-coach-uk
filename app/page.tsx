@@ -680,6 +680,33 @@ export default function Home() {
 
                 <time dateTime="2026-10-03">03.10.2026</time>
               </article>
+              {/* Review 6 */}
+              <article className="review-card">
+                <h3 className="review-name">Peter Harrison</h3>
+
+                <div className="review-info">
+                  <div className="review-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="review-source">
+                    <span className="review-source-icon facebook">
+                      <FaFacebookF />
+                    </span>
+                    <span>Facebook Review</span>
+                  </div>
+                </div>
+
+                <blockquote>
+                  &ldquo;Bogdan is an excellent personal trainer. He takes the
+                  time to understand your goals and makes every session
+                  productive and enjoyable. I've noticed a real improvement in
+                  my strength and fitness, and his encouragement keeps me
+                  motivated. Highly recommend!&rdquo;
+                </blockquote>
+
+                <time dateTime="2026-11-02">02.11.2026</time>
+              </article>
             </div>
           </div>
         </section>
