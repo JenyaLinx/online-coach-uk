@@ -700,8 +700,8 @@ export default function Home() {
                 <blockquote>
                   &ldquo;Bogdan is an excellent personal trainer. He takes the
                   time to understand your goals and makes every session
-                  productive and enjoyable. I've noticed a real improvement in
-                  my strength and fitness, and his encouragement keeps me
+                  productive and enjoyable. I&apos;ve noticed a real improvement
+                  in my strength and fitness, and his encouragement keeps me
                   motivated. Highly recommend!&rdquo;
                 </blockquote>
 
